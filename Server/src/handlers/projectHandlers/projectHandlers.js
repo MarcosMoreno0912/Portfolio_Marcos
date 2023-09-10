@@ -1,6 +1,7 @@
 const postProjects = require('../../controllers/projects/postProjects.js');
 const getAllProjects = require('../../controllers/projects/getAllProjects.js');
 const getProjectById = require('../../controllers/projects/getProjectById.js');
+const putProject = require('../../controllers/projects/putProjects.js');
 
 const postProjectsHandler = async (req, res) => {
 	const { name, description, technologies, image, dateCreation, urlDeploy, urlRepo } = req.body
@@ -38,4 +39,20 @@ const getProjectByIdHandler = async (req, res) => {
 	}
 };
 
-module.exports = { postProjectsHandler, getAllProjectsHandler, getProjectByIdHandler };
+const putProjectHandler = async (req, res) => {
+	const id = req.params.id;
+	const {name, description, technologies, image, dateCreation, urlDeploy, urlRepo} = req.body;
+	try {
+	  if(!name || !description || !technologies || !image || !dateCreation || !urlDeploy || !urlRepo){
+	  	return res.status(404).json({ error: 'Alguno de los datos está vacío o falta' });
+	  }
+
+	  const updateProject = await putProject(id, name, description, technologies, image, dateCreation, urlDeploy, urlRepo)
+	  return res.status(201).json(updateProject)
+	} catch(error) {
+		console.error('Ocurrió un error al actualizar el proyecto', error);
+		return res.status(500).json({ error: error.message });
+	}
+}
+
+module.exports = { postProjectsHandler, getAllProjectsHandler, getProjectByIdHandler, putProjectHandler };
