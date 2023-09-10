@@ -2,6 +2,7 @@ const postProjects = require('../../controllers/projects/postProjects.js');
 const getAllProjects = require('../../controllers/projects/getAllProjects.js');
 const getProjectById = require('../../controllers/projects/getProjectById.js');
 const putProject = require('../../controllers/projects/putProjects.js');
+const deleteProject = require('../../controllers/projects/deleteProjects.js');
 
 const postProjectsHandler = async (req, res) => {
 	const { name, description, technologies, image, dateCreation, urlDeploy, urlRepo } = req.body
@@ -53,6 +54,17 @@ const putProjectHandler = async (req, res) => {
 		console.error('Ocurrió un error al actualizar el proyecto', error);
 		return res.status(500).json({ error: error.message });
 	}
-}
+};
 
-module.exports = { postProjectsHandler, getAllProjectsHandler, getProjectByIdHandler, putProjectHandler };
+const deleteProjectsHandler = async (req, res) => {
+	const id = req.params.id
+	try {
+	  const deletedProject = await deleteProject(id)
+	  return res.status(201).json(deletedProject)
+	} catch(error) {
+		console.error('Ocurrió un error al eliminar el proyecto', error);
+		return res.status(500).json({ error: error.message });
+	}
+};
+
+module.exports = { postProjectsHandler, getAllProjectsHandler, getProjectByIdHandler, putProjectHandler, deleteProjectsHandler };
