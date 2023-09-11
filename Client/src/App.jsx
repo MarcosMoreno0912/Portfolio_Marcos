@@ -1,13 +1,17 @@
 import { useState } from 'react'
-import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import Home from './views/Home/Home.jsx';
+import './App.module.css'
 
-function App() {
+const App = () => {
 
   return (
-    <>
-      <p>Bienvenido a mi Portfolio</p>
-    </>
+    <div>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </div>
   )
 }
 
-export default App
+export default App;
