@@ -19,7 +19,7 @@ const Home = () => {
 				</div>
 
 				<div className={`${style.image} ${style["rotate-animation"]}`}>
-					<img src="../../../public/about/about.jpg" alt="about" />
+					<img src="../../../about/FotoPersonal.png" alt="about" />
 				</div>
 			</div>
 		</>
