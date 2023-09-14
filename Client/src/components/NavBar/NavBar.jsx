@@ -9,6 +9,10 @@ const NavBar = () => {
 		navigate('/')
 	};
 
+	const handleAboutClick = () => {
+		navigate('/about')
+	};
+
 	return (
 		<div className={style.nav} >
 			
@@ -21,7 +25,7 @@ const NavBar = () => {
 			</button>
 
 			<button>
-    		<span className={style.box}>
+    		<span className={style.box} onClick={handleAboutClick}>
         	About Me
     		</span>
 			</button>
