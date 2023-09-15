@@ -3,10 +3,9 @@ import style from './TechSkills.module.css';
 
 const TechSkills = () => {
 
-
 	return (
 		<>
-			<div>
+			<div className={style.container}>
 				<p>Esta es la view TechSkills</p>
 			</div>
 		</>

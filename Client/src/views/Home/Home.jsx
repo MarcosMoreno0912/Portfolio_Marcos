@@ -11,11 +11,11 @@ const Home = () => {
 			</div>
 			<div className={style.home}>
 				<div className={style.title}>
-					<h1>Hi, I'm Marcos Moreno, <br /> Full Stack Web Developer.</h1>
+					<h1>Hi, I'm Marcos, <br /> Full Stack Web Developer.</h1>
 				</div>
 
 				<div className={style.description}>
-					<p>Me dedico al desarrollo de páginas web desde cero, <br/> creando así soluciones totalmente personalizadas según lo que los clientes necesitan.</p>
+					<p>I am dedicated to creating personalized web pages adapted to each client. <br/> {"< I love coding />."}</p>
 				</div>
 
 				<div className={`${style.image} ${style["rotate-animation"]}`}>
