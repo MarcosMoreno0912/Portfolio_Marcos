@@ -3,13 +3,16 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar.jsx';
 import Home from './views/Home/Home.jsx';
 import AboutMe from './views/AboutMe/AboutMe.jsx';
+import TechSkills from './views/TechSkills/TechSkills.jsx';
+import Projects from './views/Projects/Projects.jsx';
+import ContactMe from './views/ContactMe/ContactMe.jsx';
 import './App.module.css'
 
 const App = () => {
   const location = useLocation();
 
 
-  const navRoutes = ['/about'];
+  const navRoutes = ['/about', '/skills', '/projects', '/contact'];
 
   return (
     <div>
@@ -17,6 +20,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
+        <Route path="/skills" element={<TechSkills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<ContactMe />} />
       </Routes>
     </div>
   )

@@ -13,6 +13,18 @@ const NavBar = () => {
 		navigate('/about')
 	};
 
+	const handleTechSkillsClick = () => {
+		navigate('/skills')
+	};
+
+	const handleProjectsClick = () => {
+		navigate('/projects')
+	};
+
+ 	const handleContactMeClick = () => {
+		navigate('/contact')
+	};
+
 	return (
 		<div className={style.nav} >
 			
@@ -31,19 +43,19 @@ const NavBar = () => {
 			</button>
 
 			<button>
-    		<span className={style.box}>
+    		<span className={style.box} onClick={handleTechSkillsClick}>
         	Tech Skills
     		</span>
 			</button>
 
 			<button>
-    		<span className={style.box}>
+    		<span className={style.box} onClick={handleProjectsClick}>
         	Projects
     		</span>
 			</button>
 
 			<button>
-    		<span className={style.box}>
+    		<span className={style.box} onClick={handleContactMeClick}>
         	Contact Me
     		</span>
 			</button>
