@@ -21,13 +21,13 @@
 	margin-bottom: 15px;
 	font-weight: 500;
 	font-size: 55px;
-	color: darkgray;
+	color: white;
 	font-family: 'Kanit', sans-serif;
 }
 
 h1 {
-	-webkit-text-stroke: 0.7px white;
-	text-stroke: 0.7px white;
+	-webkit-text-stroke: 0.3px darkgrey;
+	text-stroke: 0.3px darkgrey;
 }
 
 .home .description p {
