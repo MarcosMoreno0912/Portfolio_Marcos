@@ -1,13 +1,124 @@
 .container {
 	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-end;
+	align-items: flex-start;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	border-radius: 0px 0px 4px 4px;
 	background-color: black;
 	width: 100%;
 	height: 530px;
+}
+
+.container .image1 img {
+	height: 456px;
+	width: 380px;
+	margin-right: 5px;
+	margin-top: 40px;
+	border: 1px solid darkgrey;
+}
+
+.container .image2 img {
+	height: 225px;
+	width: 290px;
+	margin-right: 40px;
+	margin-top: 40px;
+	border: 1px solid darkgrey;
+}
+
+.container .image3 img {
+	height: 225px;
+	width: 290px;
+	margin-right: 20px;
+	border: 1px solid darkgrey;
+}
+
+.container .skills .title {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-right: 400px;
+	line-height: 0;
+}
+
+.container .skills {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	align-content: flex-end;
+	justify-content: space-between;
+	width: 550px;
+	height: 220px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 40px;
+	gap: 1em;
+}
+
+.container .skills .skill {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.container .softSkills {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	line-height: 7px;
+	height: 250px;
+	width: 400px;
+}
+
+.container .softSkills .images img {
+	height: 55px;
+	width: 55px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+	background-color: white;
+  margin-left: 7px;
+  margin-top: 3px;
+}
+
+.skill img:hover {
+  transform: scale(1.4); /* Ajusta el valor según la cantidad de zoom que deseas */
+  transition: transform 0.3s ease; /* Controla la velocidad y suavidad de la animación */
+}
+
+.container h3 {
+	color: white;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 300;
+}
+
+.container span {
+	color: white;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 200;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.container .skills img {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+}
+
+.container p {
+	color: white;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 200;
+	font-size: 14px;
 }
