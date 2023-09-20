@@ -6,8 +6,12 @@ const ContactMe = () => {
 
 	return (
 		<>
-			<div>
-				<p>Esta es la view ContactMe</p>
+			<div className={style.viewContact}>
+				<div className={style.container}>
+					<div>
+						
+					</div>
+				</div>
 			</div>
 		</>
 	)
