@@ -20,3 +20,16 @@
 	height: 100%;
 	width: 100%;
 }
+
+.viewContact .container .form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 60px;
+	margin-left: 300px;
+}
+
+.viewContact .container .form label {
+	font-family: "kanit", sans-serif;
+	color: white;
+}
