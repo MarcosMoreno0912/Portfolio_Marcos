@@ -21,15 +21,218 @@
 	width: 100%;
 }
 
+/*---------Animation---------
+.viewContact .container .animation {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+.viewContact .container .animation {
+  animation-name: moveRight;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite
+}
+
+@keyframes moveRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 40%;
+  }
+}
+*/
+
 .viewContact .container .form {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	margin-top: 60px;
-	margin-left: 300px;
+	align-items: center;
+	justify-content: center;
+	height: 430px;
+	width: 450px;
+	margin-top: 50px;
+	margin-left: 565px;
+	border: 2px solid white;
+	position: relative;
 }
 
 .viewContact .container .form label {
 	font-family: "kanit", sans-serif;
 	color: white;
+	font-weight: 400;
 }
+
+.viewContact .container .form input {
+	width: 250px;
+	border-radius: 0;
+}
+
+.viewContact .container .form .textArea {
+	border-radius: 0;
+}
+
+.viewContact .container .form .title {
+  position: absolute; /* Posición absoluta para superponer el título */
+  top: 10px; /* Alinea el título en la parte superior del contenedor */
+  left: 2px; /* Coloca el título a la izquierda del contenedor */
+  writing-mode: vertical-rl; /* Texto vertical de derecha a izquierda */
+  transform: rotate(180deg); /* Gira el texto 180 grados para que sea vertical */
+  font-family: "kanit", sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 1.2px darkgrey;
+	text-stroke: 1.2px darkgrey;
+  color: white;
+  font-weight: 500;
+  background-color: black; /* Puedes ajustar el fondo según tus preferencias */
+  padding: 1px; /* Espaciado del título */
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -50px;
+  margin-top: 135px;
+  padding: 5px 5px;
+  gap: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  transform: rotate(90deg);
+}
+
+/* for all social containers*/
+.socialContainer1 {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  transform: rotate(270deg);
+}
+
+.socialContainer2 {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  transform: rotate(270deg);
+}
+
+.socialContainer3 {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  transform: rotate(270deg);
+}
+
+.socialContainer4 {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  transform: rotate(270deg);
+}
+/* instagram*/
+.socialContainer1:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.socialContainer2:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.socialContainer3:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.socialContainer4:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer1:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialContainer2:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialContainer3:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialContainer4:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer1:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+.socialContainer2:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+.socialContainer3:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+.socialContainer4:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
