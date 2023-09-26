@@ -4,6 +4,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const layout = {
   labelCol: {
     span: 8,
@@ -29,7 +30,7 @@ const validateMessages = {
 const onFinish = async (values) => {
   console.log('values')
   try {
-    const response = await axios.post('http://localhost:3001/enviar-correo', values);
+    const response = await axios.post('/enviar-correo', values);
     console.log(response.data.message);
     // Puedes manejar la respuesta aquí, por ejemplo, mostrar un mensaje de éxito al usuario.
     toast.success('Correo enviado con éxito', {
