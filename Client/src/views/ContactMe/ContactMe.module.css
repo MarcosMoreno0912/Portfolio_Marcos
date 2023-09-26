@@ -16,38 +16,58 @@
 .viewContact .container {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	flex-direction: column;
 	height: 100%;
 	width: 100%;
 }
 
-/*---------Animation---------
-.viewContact .container .animation {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100px;
-  height: 100px;
-  background-color: white;
+.viewContact .container .contact {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-top: 65px;
+	margin-left: 80px;
+	width: 420px;
+	height: 350px;
 }
 
-.viewContact .container .animation {
-  animation-name: moveRight;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite
+.viewContact .container .contact button {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: 'kanit', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.5;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
 }
 
-@keyframes moveRight {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 40%;
-  }
+.viewContact .container .contact button:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  transition: all .42s cubic-bezier(.25,.10,.25,1);
+  width: 0;
 }
-*/
+
+.viewContact .container .contact button:hover:before {
+  background-color: #fff;
+  width: 16rem;
+}
+
+.viewContact .container .contact p {
+	color: white;
+	font-family: "kanit", sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+}
 
 .viewContact .container .form {
 	display: flex;
@@ -56,9 +76,9 @@
 	align-items: center;
 	justify-content: center;
 	height: 430px;
-	width: 450px;
+	width: 550px;
 	margin-top: 50px;
-	margin-left: 565px;
+	margin-left: 25px;
 	border: 2px solid white;
 	position: relative;
 }
@@ -70,12 +90,24 @@
 }
 
 .viewContact .container .form input {
-	width: 250px;
+	width: 292px;
 	border-radius: 0;
 }
 
 .viewContact .container .form .textArea {
 	border-radius: 0;
+}
+
+.viewContact .container .form button {
+	background-color: white;
+	border-radius: 0;
+	font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: black;
+  border: 3px solid darkgrey;
+  align-items: center;
+  justify-content: center;
 }
 
 .viewContact .container .form .title {
@@ -102,8 +134,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: -50px;
-  margin-top: 135px;
+  margin-left: -90px;
+  margin-top: 136px;
   padding: 5px 5px;
   gap: 5px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);

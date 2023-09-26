@@ -19,7 +19,7 @@ const AboutMe = () => {
 
 		  		<p>Para contactar conmigo puedes hacerlo mediante  <a href="https://api.whatsapp.com/send?phone=5492634284295"> WhatsApp</a>, o dirígete a la pestaña Contact Me.</p>
 
-		  		<p>Gracias, <br/><br/> Marcos</p>
+		  		<p>Gracias.</p>
 		  	</div>
 				<div className={style.macbook}>
   				<div className={style.inner}>

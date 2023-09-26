@@ -6,11 +6,12 @@ import AboutMe from './views/AboutMe/AboutMe.jsx';
 import TechSkills from './views/TechSkills/TechSkills.jsx';
 import Projects from './views/Projects/Projects.jsx';
 import ContactMe from './views/ContactMe/ContactMe.jsx';
-import './App.module.css'
+import './App.module.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const location = useLocation();
-
 
   const navRoutes = ['/about', '/skills', '/projects', '/contact'];
 
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<ContactMe />} />
       </Routes>
+      <ToastContainer />
     </div>
   )
 }
