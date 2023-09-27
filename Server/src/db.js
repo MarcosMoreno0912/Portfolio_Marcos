@@ -1,21 +1,21 @@
-/*require("dotenv").config();
+require("dotenv").config();
 const { Sequelize } = require("sequelize");
 
 const fs = require('fs');
 const path = require('path');
-/*const {
+const {
   DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY
 } = process.env;
 
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/portfolio`, {
   logging: false,
   native: false,
-});*/
+});
 
 /*const sequelize = new Sequelize(DB_DEPLOY, {
   logging: false,
   native: false,
-});
+});*/
 
 const basename = path.basename(__filename);
 
@@ -43,4 +43,4 @@ Technologies.belongsToMany(Projects, { through: 'ProjectTechnologies' });
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
   conn: sequelize,     // para importart la conexión { conn } = require('./db.js');
-};*/
+};
