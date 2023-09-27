@@ -9,7 +9,7 @@ import './index.css?inline'
 import axios from 'axios';
 
 axios.defaults.baseURL = "http://localhost:3001/";
-//axios.defaults.baseURL = "https://portfoliomarcos-production.up.railway.app/";
+//axios.defaults.baseURL = "https://portfoliomarcos-production.up.railway.app/";  dominio del servidor
 
 createRoot(document.getElementById('root')).render(
   <Provider store = {store}>
