@@ -8,8 +8,8 @@ import App from './App.jsx'
 import './index.css?inline'
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://localhost:3001/";
-//axios.defaults.baseURL = "https://portfoliomarcos-production.up.railway.app/";  dominio del servidor
+//axios.defaults.baseURL = "http://localhost:3001/";
+axios.defaults.baseURL = "https://back-portfolio-wfo7.onrender.com";
 
 createRoot(document.getElementById('root')).render(
   <Provider store = {store}>
