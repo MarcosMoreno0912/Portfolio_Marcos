@@ -28,7 +28,7 @@ const NavBar = () => {
 	return (
 		<div className={style.nav} >
 			
-			<img src="../../../public/assets/icons/pestañaPortfolio.jpg" alt="Logo" onClick={handleHomeClick}/>
+			<img src="../../../pestañaPortfolio.jpg" alt="Logo" onClick={handleHomeClick}/>
 
 			<button>
     		<span className={style.box} onClick={handleHomeClick}>
