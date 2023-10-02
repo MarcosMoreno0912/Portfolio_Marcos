@@ -15,7 +15,7 @@ const Home = () => {
 				</div>
 
 				<div className={style.description}>
-					<p>I am dedicated to creating personalized web pages adapted to each client. <br/> {"< I love coding />."}</p>
+					<p>I am dedicated to creating personalized web pages<br/> adapted to each client. <br/><br/> {"< I love coding />."}</p>
 				</div>
 
 				<div className={`${style.image} ${style["rotate-animation"]}`}>
