@@ -98,11 +98,13 @@
   flex-direction: column; /* Alinea los elementos verticalmente */
   background-color: darkgray; /* Cambia el color de fondo según tu diseño */
   position: absolute; /* Asegura que se superponga a otros elementos */
-  top: 100%; /* Coloca el menú debajo del botón de hamburguesa */
-  left: 0;
-  width: 100%;
+  top: 9%; /* Coloca el menú debajo del botón de hamburguesa */
+  right: 10px;
+  width: 40%;
   padding: 10px; /* Espaciado interior para los elementos de menú */
   border-radius: 0px 0px 4px 4px; /* Igual que en tu .nav */
+  border: 2px solid black;
+
   /* Otros estilos de diseño específicos según tu preferencia */
 }
 
@@ -128,13 +130,19 @@
 .nav .menuIcon {
   display: none; /* Ocultar en pantallas grandes */
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .nav .menuIcon .bar {
-  width: 30px;
+  width: 22px;
   height: 3px;
   background-color: #333;
   margin: 4px 0;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Estilo para el menú móvil (inicialmente oculto) */
@@ -149,6 +157,14 @@
     justify-content: space-around;
   }
 
+  .nav img {
+    width: 37px;
+    height: 37px;
+    margin-top: 0;
+    left: 10px;
+    margin-right: 100px;
+  }
+
   .nav .navBtn {
     display: none;
   }
@@ -156,10 +172,23 @@
   .nav .menuIcon {
     display: inline-block;/* Mostrar el icono de menú en pantallas pequeñas */
     justify-content: flex-start;
+    height: 37px;
+    width: 37px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 4px;
   }
 
   .nav .mobileMenu{
     display: flex; /* Mostrar el menú móvil en pantallas pequeñas */
     margin-bottom: 30%;
+    opacity: 0.96;
+  }
+
+  .nav .mobileMenu button {
+    font-family: "kanit", sans-serif;
+    font-variant: small-caps;
+    font-weight: 500;
   }
 }
