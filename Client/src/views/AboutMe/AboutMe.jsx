@@ -16,9 +16,7 @@ const AboutMe = () => {
 		  		<p>Ya sea que estés buscando crear un sitio web estático como "carta de presentación al mercado" o<br/>
             un sitio dinámico que te permita gestionar y hacer crecer tu emprendimiento, estás en el lugar indicado.
 		  		</p>
-
-		  		<p>Para contactar conmigo puedes hacerlo mediante  <a href="https://api.whatsapp.com/send?phone=5492634284295"> WhatsApp</a>, o dirígete a la pestaña Contact Me.</p>
-
+		  		<p>Para contactar conmigo puedes hacerlo mediante<a href="https://api.whatsapp.com/send?phone=5492634284295"> WhatsApp</a>, o dirígete a la pestaña Contact Me.</p>
 		  		<p>Gracias.</p>
 		  	</div>
 				<div className={style.macbook}>

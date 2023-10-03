@@ -477,3 +477,41 @@
     box-shadow: 0 0 60px 40px rgba(0,0,0,0.3);
   }
 }
+
+@media (max-width: 768px) {
+  .about {
+    width: auto;
+    height: 800px;
+  }
+
+  .about .text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: 250;
+    -webkit-text-stroke: 0.5px white;
+    text-stroke: 0.5px white;
+    color: lightgray;
+    font-family: 'Kanit', sans-serif;
+    font-size: 12.5px;
+    width: 98%;
+    height: 562px;
+    margin-left: 10px;
+    margin-bottom: 140px;
+  }
+
+  /*---Animation---*/
+  .macbook {
+    width: 290px;
+    height: 236px;
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    margin: -85px 0 0 -78px;
+    perspective: 500px;
+  }
+}
+
+@media (max-width: 540px) {}
