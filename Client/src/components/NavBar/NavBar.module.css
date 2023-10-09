@@ -219,6 +219,7 @@
   .nav {
     display: flex;
     justify-content: space-evenly;
+
   }
 
   .nav img {
@@ -248,6 +249,7 @@
     display: flex; /* Mostrar el menú móvil en pantallas pequeñas */
     margin-bottom: 30%;
     opacity: 0.96;
+    z-index: 9999;
   }
 
   .nav .mobileMenu button {
