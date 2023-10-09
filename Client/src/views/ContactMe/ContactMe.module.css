@@ -463,7 +463,7 @@
     align-content: flex-end;
     align-items: flex-start;
     width: 100%;
-    height: 1200px;
+    height: 1100px;
   }
 
   .viewContact .container .contact {
@@ -598,7 +598,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -78vw;
+    margin-left: -66vw;
     margin-top: 55vw;
     padding: 5px 5px;
     gap: 5px;
