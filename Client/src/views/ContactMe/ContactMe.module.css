@@ -498,19 +498,16 @@
     font-family: "kanit", sans-serif;
     color: white;
     font-weight: 400;
-    margin-left: 5vw;
   }
 
   .viewContact .container .form input {
     width: 70vw;
     border-radius: 0;
-    margin-left: 5vw;
   }
 
   .viewContact .container .form .textArea {
     border-radius: 0;
     width: 70vw;
-    margin-left: 5vw;
   }
 
   .viewContact .container .form .title {

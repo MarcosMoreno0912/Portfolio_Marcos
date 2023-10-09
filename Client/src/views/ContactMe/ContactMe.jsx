@@ -101,6 +101,7 @@ const ContactMe = () => {
           		  required: true,
        		 	 },
       		  ]}
+            style={{ marginLeft: '3vw' }}
     		  >
       		  <Input />
     		  </Form.Item>
@@ -112,13 +113,14 @@ const ContactMe = () => {
           		  type: 'email',
         		  },
       		  ]}
+            style={{ marginLeft: '3vw' }}
     		  >
       		  <Input />
     		  </Form.Item>
-    		  <Form.Item name={['user', 'asunto']} label="Asunto">
+    		  <Form.Item name={['user', 'asunto']} label="Asunto" style={{ marginLeft: '3vw' }}>
       		  <Input />
     		  </Form.Item>
-    		  <Form.Item name={['user', 'descripcion']} label="Descripcion">
+    		  <Form.Item name={['user', 'descripcion']} label="Descripcion" style={{ marginLeft: '3vw' }}>
      		 	 <Input.TextArea className={style.textArea} style={{ maxHeight: 150, }} />
     		  </Form.Item>
     		  <Form.Item
@@ -126,6 +128,7 @@ const ContactMe = () => {
        		 	 ...layout.wrapperCol,
         		  offset: 8,
       		  }}
+            style={{ marginLeft: '3vw' }}
     		  >
       		  <Button type="primary" htmlType="submit">
        			  Send email
