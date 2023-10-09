@@ -74,7 +74,7 @@ const ContactMe = () => {
 	 <div className={style.container}>
 		  <div className={style.contact}>
     	 <p>Si necesitas contactarte conmigo, estoy aquí para ayudarte.<br/> Completa el formulario para enviarme un email,  <br/> o hazlo dejando un mensaje en mis redes haciendo click en los íconos. <br/> <br/> </p>
-  	   <div>
+  	   <div className={style.writeMe}>
           <button>Escríbeme>>></button>
         </div>
       </div>
@@ -119,7 +119,7 @@ const ContactMe = () => {
       		  <Input />
     		  </Form.Item>
     		  <Form.Item name={['user', 'descripcion']} label="Descripcion">
-     		 	 <Input.TextArea className={style.textArea} style={{width: 350, maxHeight: 150, }} />
+     		 	 <Input.TextArea className={style.textArea} style={{ maxHeight: 150, }} />
     		  </Form.Item>
     		  <Form.Item
       		  wrapperCol={{

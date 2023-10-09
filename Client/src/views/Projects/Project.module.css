@@ -104,8 +104,8 @@
 		flex-direction: row;
 		height: 50vw;
 		width: 95vw;
-		margin-left: 50px;
-}
+		margin-left: 9vw;
+	}
 
 	.containerP .imgContainer .cardP {
 		display: flex;
@@ -125,7 +125,7 @@
 		justify-content: center;
 		height: 80px;
 		width: 400px;
-		margin-left: 19vw;
+		margin-left: 17vw;
 		margin-bottom: 10px;
 	}
 }
